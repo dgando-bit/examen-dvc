@@ -1,6 +1,7 @@
 # Auteur
-GANDO BAKARY Destin
-
+### GANDO BAKARY Destin
+#### email : tinoman01@hotmail.com
+#### lien DagsHub: https://dagshub.com/bak1tino/examen-dvc/src/master
 # Examen DVC et Dagshub
 Dans ce dépôt vous trouverez l'architecture proposé pour mettre en place la solution de l'examen. 
 
@@ -21,7 +22,14 @@ Dans ce dépôt vous trouverez l'architecture proposé pour mettre en place la s
 │       ├── gridsearch_model.py
 │       ├── train_model.py
 │       └── evaluate_model.py
-└── requirements.txt       # Liste des dépendances (pandas, sklearn, etc.)```
+└── requirements.txt       # Liste des dépendances (pandas, sklearn, etc.)
+```
+
+## Lancement et installation des dépendences
+- virtualenv env
+- source env/bin/activate
+- pip install -r ./requirements.txt
+
 N'hésitez pas à rajouter les dossiers ou les fichiers qui vous semblent pertinents.
 
 Vous devez dans un premier temps *Fork* le repo et puis le cloner pour travailler dessus. Le rendu de cet examen sera le lien vers votre dépôt sur DagsHub. Faites attention à bien mettre https://dagshub.com/licence.pedago en tant que colaborateur avec des droits de lecture seulement pour que ce soit corrigé.
