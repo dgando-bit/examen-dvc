@@ -5,7 +5,7 @@ import json
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
 def evaluate_and_predict():
-    processed_dir = 'data/processed_data'
+    processed_dir = 'data/processed'
     data_dir = 'data'
     model_dir = 'models'
     metrics_dir = 'metrics'

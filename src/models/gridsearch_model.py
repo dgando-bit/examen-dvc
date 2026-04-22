@@ -6,7 +6,7 @@ from sklearn.model_selection import GridSearchCV
 
 def tune_and_save_model():
     # Configuration des dossiers et fichiers
-    input_dir = 'data/processed_data'
+    input_dir = 'data/processed'
     model_dir = 'models'
     os.makedirs(model_dir, exist_ok=True)
 

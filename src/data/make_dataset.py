@@ -3,12 +3,12 @@ import os
 from sklearn.model_selection import train_test_split
 
 def split_processed_data():
-    input_path = 'data/raw_data/raw.csv'
-    output_dir = 'data/processed_data'
+    input_path = 'data/raw/raw.csv'
+    output_dir = 'data/processed'
     target_col = 'silica_concentrate'
 
     if not os.path.exists(input_path):
-        print(f"Erreur : Le fichier {input_path} est absent. Lancez d'abord import_data.py")
+        print(f"Erreur : Le fichier {input_path} est absent. Lancez d'abord import_raw_data.py")
         return
 
     df = pd.read_csv(input_path)

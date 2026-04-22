@@ -3,7 +3,7 @@ import os
 from sklearn.preprocessing import StandardScaler
 
 def scale_data():
-    input_dir = 'data/processed_data'
+    input_dir = 'data/processed'
     train_path = os.path.join(input_dir, 'X_train.csv')
     test_path = os.path.join(input_dir, 'X_test.csv')
     

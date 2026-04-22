@@ -4,7 +4,7 @@ import joblib
 from sklearn.ensemble import RandomForestRegressor
 
 def train_final_model():
-    input_dir = 'data/processed_data'
+    input_dir = 'data/processed'
     model_dir = 'models'
     best_model_path = os.path.join(model_dir, 'best_model.pkl')
     final_model_path = os.path.join(model_dir, 'trained_model.pkl')

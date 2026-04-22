@@ -2,7 +2,7 @@ import os
 import requests
 
 def download_raw_data():
-    raw_dir = 'data/raw_data'
+    raw_dir = 'data/raw'
     raw_file_path = os.path.join(raw_dir, 'raw.csv')
     url = "https://datascientest-mlops.s3.eu-west-1.amazonaws.com/mlops_dvc_fr/raw.csv"
 
