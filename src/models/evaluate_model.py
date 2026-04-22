@@ -2,11 +2,11 @@ import pandas as pd
 import os
 import joblib
 import json
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, root_mean_squared_error
 
 def evaluate_and_predict():
     processed_dir = 'data/processed'
-    data_dir = 'data'
+    data_dir = 'data/predictions'
     model_dir = 'models'
     metrics_dir = 'metrics'
     
@@ -33,7 +33,8 @@ def evaluate_and_predict():
 
     # Calcul des métriques
     mse = mean_squared_error(y_test, predictions)
-    rmse = mean_squared_error(y_test, predictions, squared=False)
+    rmse = root_mean_squared_error(y_test, predictions)
+    
     r2 = r2_score(y_test, predictions)
     mae = mean_absolute_error(y_test, predictions)
 
@@ -59,6 +60,9 @@ def evaluate_and_predict():
     })
     
     predictions_path = os.path.join(data_dir, 'predictions.csv')
+
+    os.makedirs(os.path.dirname(predictions_path), exist_ok=True)
+
     results_df.to_csv(predictions_path, index=False)
     
     print(f"Tableau des prédictions sauvegardé dans : {predictions_path}")
