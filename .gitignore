@@ -1,4 +1,13 @@
-/venv
+env/
+__pycache__/
+*.py[cod]
+
+.dvc/cache
+.dvc/tmp
+.dvc/config.local
+
+/data/raw_data
+/data/processed_data
 /clean_data.csv
-/env
-data/processed_data/
+
+.DS_Store
