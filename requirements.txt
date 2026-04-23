@@ -2,3 +2,4 @@ pandas==3.0.2
 scikit-learn==1.8.0
 dvc==3.67.1
 joblib==1.5.3
+requests==2.33.1
